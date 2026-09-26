@@ -192,7 +192,7 @@
             data = null;
           }
 
-          const okValue = data && (data.ok === true || data.ok === "ok" || data.ok === 1);
+          const okValue = data && (data.status === "ok");
 
           if (!res.ok || !okValue) {
             throw new Error(
