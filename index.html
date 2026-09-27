@@ -192,7 +192,7 @@
             data = null;
           }
 
-          const okValue = data && (data.status === "ok");
+          const okValue = data && (data.status === "online");
 
           if (!res.ok || !okValue) {
             throw new Error(
